@@ -1,0 +1,21 @@
+<!-- verify-otp.component.html -->
+<div class="container">
+    <div class="content">
+        <div class="back-link-container">
+            <a routerLink="/send-otp" class="back-link">Back</a>
+        </div>
+        <form [formGroup]="otpForm" (ngSubmit)="verifyOTP()" novalidate>
+            <div class="form-group">
+                <label for="otp">Enter OTP</label>
+                <input type="text" id="otp" formControlName="otp" required>
+            </div>
+            <div *ngIf="submitted && !otpValid" class="error-message">
+                Invalid OTP. Please try again.
+                <p></p>
+            </div>
+            <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+
+            <button type="submit">Verify OTP</button>
+        </form>
+    </div>
+</div>

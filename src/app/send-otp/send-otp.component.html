@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Login with Mobile</h2>
+    <div class="content">
+        <form (ngSubmit)="sendOTP()" novalidate>
+            <div class="form-group">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" id="mobileNumber" [(ngModel)]="mobileNumber" name="mobileNumber" required
+                    pattern="^[0-9]{10}$">
+                <div *ngIf="submitted && !mobileNumberValid" class="error-message">
+                    Please enter a valid mobile number.
+                    <p></p>
+                </div>
+            </div>
+            <button type="submit">Send OTP</button>
+        </form>
+    </div>
+</div>

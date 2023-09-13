@@ -1,0 +1,18 @@
+/* verify-otp.component.css */
+.background-container {
+  background-image: url('/assets/img/ocean.jpg');
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Add any other styles you want for your background container */
+}
+
+/* Define any other styles for your component here */

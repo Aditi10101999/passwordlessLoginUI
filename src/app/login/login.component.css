@@ -1,0 +1,77 @@
+/* src/app/mobile-login/mobile-login.component.css */
+
+h2 {
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input[type="tel"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect the width */
+}
+
+button {
+    background-color: #ff9900;
+    /* Amazon Prime orange color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #e88e00;
+    /* Darker shade of Amazon Prime orange on hover */
+}
+
+.container {
+    background-color: #131921;
+    /* Dark background color similar to Amazon Prime */
+    color: #fff;
+    /* Text color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* verify-otp.component.css */
+.back-link-container {
+    position: relative;
+    /* Set the parent container to relative positioning */
+}
+
+.back-link {
+    position: absolute;
+    /* Apply absolute positioning to the link */
+    top: 0px;
+    /* Adjust this value as needed to control the vertical position */
+    left: 10px;
+    /* Adjust this value as needed to control the horizontal position */
+    color: #007bff;
+    /* Set the link color to blue (you can change it) */
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    /* Add underline on hover (optional) */
+}
